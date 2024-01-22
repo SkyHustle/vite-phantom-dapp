@@ -8,6 +8,7 @@ import { Connector } from "@web3-react/types";
 import allConnections from "./connectors";
 
 const connections: [Connector, Web3ReactHooks][] = allConnections.map(([connector, hooks]) => [connector, hooks]);
+console.log(connections);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Web3ReactProvider connectors={connections}>
